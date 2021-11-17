@@ -20,7 +20,7 @@ function iniciaJogo() {
     var vetorCores2 = vetorCores.map(vetorCores => vetorCores.toUpperCase());
 
     while (!booleano) {
-        corEscolhida = prompt("Pensei em alguma dessas cores abaixo: \n" + vetorCores.join(',\n ') + "\nEm qual delas eu pensei?\n" + `Você tem ${vidas} tentativas restantes`);
+        corEscolhida = prompt("Pensei em alguma dessas cores abaixo: \n " + vetorCores.join(',\n ') + "\nEm qual delas eu pensei?\n" + `Você tem ${vidas} tentativas restantes`);
         corEscolhida = corEscolhida.toUpperCase();
         if (vidas == 0) {
             booleano = true;
